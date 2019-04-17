@@ -1,5 +1,6 @@
 #ifndef PID_H
 #define PID_H
+#include <iostream>
 
 class PID {
  public:
@@ -30,6 +31,20 @@ class PID {
    * @output The total PID error
    */
   double TotalError();
+
+
+  /**
+   * Print the value of PID error variables. 
+   * output the p_error, i_error, d_error
+  */
+  void PrintError();
+
+
+  /**
+   * Print the value of PID controller's coefficient.
+   * output the Kp, Ki, Kd
+  */
+  void PrintGain();
 
  private:
   /**
