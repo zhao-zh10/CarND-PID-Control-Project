@@ -1,0 +1,12 @@
+1. Automating tuning of PID Controllers  (https://www.researchgate.net/post/Automating_tuning_of_PID_Controllers)
+2. On Automation of the PID Tuning Procedure  (https://pdfs.semanticscholar.org/4bdd/25ea2d463ed7626eb37d18be1687b3a4391e.pdf)
+3. Tuning a PID Controller  (https://www.omega.com/technical-learning/tuning-a-pid-controller.html)
+4. Automatic Controller Tuning using Relay-based Model Identification (http://portal.research.lu.se/ws/files/33100749/ThesisJosefinBerner.pdf)
+5. PID controller  (https://en.wikipedia.org/wiki/PID_controller)
+6. PID Explained for Process Engineers: Part 2 - Tuning Coefficients.  (https://www.aiche.org/resources/publications/cep/2016/february/pid-explained-process-engineers-part-2-tuning-coefficients)
+7. Self-Tuning PID Controller for Autonomous Car Tracking in Urban Traffic  (http://oa.upm.es/30015/1/INVE_MEM_2013_165545.pdf)
+8. PID controller (https://www.wikiwand.com/en/PID_controller#)
+9. Controlling Self Driving Cars （https://www.youtube.com/watch?v=4Y7zG48uHRo&t=31s）
+10. An Introduction to PID Controllers (http://georgegillard.com/programming-guides/introduction_to_pid_controllers_ed2-pdf?format=raw)
+11. What are good strategies for tuning PID loops? (https://robotics.stackexchange.com/questions/167/what-are-good-strategies-for-tuning-pid-loops)
+12. Twiddle for PID (https://martin-thoma.com/twiddle/)
