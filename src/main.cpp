@@ -37,9 +37,10 @@ int main(int argc, char* argv[]) {
   /**
    * TODO: Initialize the pid variable.
    */
-  double Kp_init = 0.4;
-  double Ki_init = 0.0002;
-  double Kd_init = 10.0;
+  //(0.33,0.0003,25.5) works for throttle is 0.3
+  double Kp_init = 0.33;
+  double Ki_init = 0.0003;
+  double Kd_init = 25.5;
   if (argc == 4){
     Kp_init = atof(argv[1]);
     Ki_init = atof(argv[2]);
@@ -80,13 +81,7 @@ int main(int argc, char* argv[]) {
            */
           pid.UpdateError(cte);
           steer_value = pid.TotalError();
-          // Clip the steering value to [-1, 1]
-          // if (steer_value > 1.0){
-          //   steer_value = 1.0;
-          // }
-          // else if (steer_value < -1.0){
-          //   steer_value = -1.0;
-          // }
+
 
           // DEBUG
           pid.PrintError();
@@ -96,7 +91,7 @@ int main(int argc, char* argv[]) {
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
-          msgJson["throttle"] = 0.5;
+          msgJson["throttle"] = 0.3;
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
