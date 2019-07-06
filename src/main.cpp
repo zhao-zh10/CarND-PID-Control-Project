@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
   /**
    * TODO: Initialize the pid variable.
    */
-  //(0.33,0.0003,25.5) works for throttle is 0.3
+  //(0.3,0.0005,20.0) works for throttle is 0.3
   double Kp_init = 0.33;
   double Ki_init = 0.0003;
   double Kd_init = 25.5;
@@ -70,8 +70,8 @@ int main(int argc, char* argv[]) {
         if (event == "telemetry") {
           // j[1] is the data JSON object
           double cte = std::stod(j[1]["cte"].get<string>());
-          double speed = std::stod(j[1]["speed"].get<string>());
-          double angle = std::stod(j[1]["steering_angle"].get<string>());
+          // double speed = std::stod(j[1]["speed"].get<string>());
+          // double angle = std::stod(j[1]["steering_angle"].get<string>());
           double steer_value;
           /**
            * TODO: Calculate steering value here, remember the steering value is
